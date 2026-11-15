@@ -1,0 +1,10 @@
+.env
+*.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+# real dataset and its results (large / licence-restricted); keep synthetic samples
+data/kaggle/
+outputs/real/

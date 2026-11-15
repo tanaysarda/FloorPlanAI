@@ -1,0 +1,11 @@
+# Versions marked (tested) were installed and exercised by the test suite in the development environment.
+numpy==2.5.4                     # (tested)
+opencv-python-headless==5.0.0.93 # (tested)
+pandas==3.0.6                    # (tested)
+matplotlib==3.11.2               # (tested)
+
+# NOT installable in the development environment, therefore NOT tested here. Lower bounds only;
+# pin to the versions you verify locally.
+streamlit>=1.40        # Streamlit UI (app.py)
+anthropic>=0.40        # optional: LLM via Anthropic (set ANTHROPIC_API_KEY)
+openai>=1.50           # optional: LLM via OpenAI (set OPENAI_API_KEY)

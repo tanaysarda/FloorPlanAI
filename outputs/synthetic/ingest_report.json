@@ -1,0 +1,23 @@
+{
+  "processed": [
+    "synthetic_plan_01",
+    "synthetic_plan_02",
+    "synthetic_plan_03",
+    "synthetic_plan_04",
+    "synthetic_plan_05",
+    "synthetic_plan_06",
+    "synthetic_plan_07",
+    "synthetic_plan_08"
+  ],
+  "skipped": [],
+  "overlays": [
+    "outputs/synthetic/overlays/synthetic_plan_01_overlay.png",
+    "outputs/synthetic/overlays/synthetic_plan_02_overlay.png",
+    "outputs/synthetic/overlays/synthetic_plan_03_overlay.png",
+    "outputs/synthetic/overlays/synthetic_plan_04_overlay.png",
+    "outputs/synthetic/overlays/synthetic_plan_05_overlay.png",
+    "outputs/synthetic/overlays/synthetic_plan_06_overlay.png",
+    "outputs/synthetic/overlays/synthetic_plan_07_overlay.png",
+    "outputs/synthetic/overlays/synthetic_plan_08_overlay.png"
+  ]
+}

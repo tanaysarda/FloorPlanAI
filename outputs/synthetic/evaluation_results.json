@@ -1,0 +1,913 @@
+{
+  "dataset": "synthetic",
+  "note": "SYNTHETIC TEST DATA expectations derived from the generator ground truth, not from the database or the QA engine.",
+  "summary": {
+    "total": 28,
+    "correct": 28,
+    "incorrect": 0,
+    "accuracy_pct": 100.0,
+    "grounded_answers": 28
+  },
+  "by_category": {
+    "ambiguous": {
+      "correct": 1,
+      "total": 1
+    },
+    "averages": {
+      "correct": 3,
+      "total": 3
+    },
+    "count": {
+      "correct": 7,
+      "total": 7
+    },
+    "empty_result": {
+      "correct": 1,
+      "total": 1
+    },
+    "extremes": {
+      "correct": 2,
+      "total": 2
+    },
+    "filtering": {
+      "correct": 3,
+      "total": 3
+    },
+    "invalid_plan": {
+      "correct": 2,
+      "total": 2
+    },
+    "largest_smallest": {
+      "correct": 2,
+      "total": 2
+    },
+    "unsupported": {
+      "correct": 4,
+      "total": 4
+    },
+    "windows": {
+      "correct": 3,
+      "total": 3
+    }
+  },
+  "failures": [],
+  "results": [
+    {
+      "id": 1,
+      "category": "count",
+      "question": "How many rooms does plan 3 have?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 6
+      },
+      "actual_rows": [
+        [
+          3,
+          6
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "value"
+      ],
+      "sql": "SELECT plan_id, room_count AS value FROM plan_summary WHERE plan_id = ?",
+      "answer": "Plan 3 has 6 rooms.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 2,
+      "category": "count",
+      "question": "How many rooms are in floor plan 6?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 8
+      },
+      "actual_rows": [
+        [
+          6,
+          8
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "value"
+      ],
+      "sql": "SELECT plan_id, room_count AS value FROM plan_summary WHERE plan_id = ?",
+      "answer": "Plan 6 has 8 rooms.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 3,
+      "category": "count",
+      "question": "How many doors does plan 8 have?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 8
+      },
+      "actual_rows": [
+        [
+          8,
+          8
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "value"
+      ],
+      "sql": "SELECT plan_id, door_count AS value FROM plan_summary WHERE plan_id = ?",
+      "answer": "Plan 8 has 8 doors.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 4,
+      "category": "count",
+      "question": "How many windows does plan 2 have?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 3
+      },
+      "actual_rows": [
+        [
+          2,
+          3
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "value"
+      ],
+      "sql": "SELECT plan_id, window_count AS value FROM plan_summary WHERE plan_id = ?",
+      "answer": "Plan 2 has 3 windows.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 5,
+      "category": "count",
+      "question": "How many plans are there?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 8
+      },
+      "actual_rows": [
+        [
+          8
+        ]
+      ],
+      "actual_columns": [
+        "value"
+      ],
+      "sql": "SELECT COUNT(*) AS value FROM floor_plans",
+      "answer": "The database contains 8 floor plans.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 6,
+      "category": "count",
+      "question": "How many bedrooms are in plan 6?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 3
+      },
+      "actual_rows": [
+        [
+          6,
+          3
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "value"
+      ],
+      "sql": "SELECT plan_id, COUNT(*) AS value FROM rooms WHERE plan_id = ? AND LOWER(label) = LOWER(?) GROUP BY plan_id",
+      "answer": "Plan 6 has 3 bedrooms.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 7,
+      "category": "count",
+      "question": "How many bathrooms does plan 1 have?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 1
+      },
+      "actual_rows": [
+        [
+          1,
+          1
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "value"
+      ],
+      "sql": "SELECT plan_id, COUNT(*) AS value FROM rooms WHERE plan_id = ? AND LOWER(label) = LOWER(?) GROUP BY plan_id",
+      "answer": "Plan 1 has 1 bathroom.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 8,
+      "category": "largest_smallest",
+      "question": "What is the largest room in plan 7?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "row",
+        "values": {
+          "room_name": "living room #3",
+          "area_px": 17064
+        }
+      },
+      "actual_rows": [
+        [
+          7,
+          "living room #3",
+          "living room",
+          17064
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "room_name",
+        "label",
+        "area_px"
+      ],
+      "sql": "SELECT plan_id, room_name, label, area_px FROM room_details WHERE plan_id = ? AND area_px = (SELECT MAX(area_px) FROM room_details WHERE plan_id = ?) ORDER BY room_index",
+      "answer": "The largest room in plan 7 is living room #3, with an area of 17,064 pixels (pixel area; no real-world scale is available).",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 9,
+      "category": "largest_smallest",
+      "question": "What is the smallest room in plan 3?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "row",
+        "values": {
+          "room_name": "bedroom #5",
+          "area_px": 13125
+        }
+      },
+      "actual_rows": [
+        [
+          3,
+          "bedroom #5",
+          "bedroom",
+          13125
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "room_name",
+        "label",
+        "area_px"
+      ],
+      "sql": "SELECT plan_id, room_name, label, area_px FROM room_details WHERE plan_id = ? AND area_px = (SELECT MIN(area_px) FROM room_details WHERE plan_id = ?) ORDER BY room_index",
+      "answer": "The smallest room in plan 3 is bedroom #5, with an area of 13,125 pixels (pixel area; no real-world scale is available).",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 10,
+      "category": "filtering",
+      "question": "Which plans have more than 3 doors?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "actual_rows": [
+        [
+          2,
+          "synthetic_plan_02",
+          4
+        ],
+        [
+          3,
+          "synthetic_plan_03",
+          7
+        ],
+        [
+          5,
+          "synthetic_plan_05",
+          4
+        ],
+        [
+          6,
+          "synthetic_plan_06",
+          8
+        ],
+        [
+          7,
+          "synthetic_plan_07",
+          5
+        ],
+        [
+          8,
+          "synthetic_plan_08",
+          8
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "name",
+        "value"
+      ],
+      "sql": "SELECT plan_id, name, door_count AS value FROM plan_summary WHERE door_count > ? ORDER BY plan_id",
+      "answer": "6 plans with more than 3 doors: plan 2 (4), plan 3 (7), plan 5 (4), plan 6 (8), plan 7 (5), plan 8 (8).",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 11,
+      "category": "filtering",
+      "question": "Which floor plans contain at least four windows?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          3,
+          6,
+          7,
+          8
+        ]
+      },
+      "actual_rows": [
+        [
+          3,
+          "synthetic_plan_03",
+          4
+        ],
+        [
+          6,
+          "synthetic_plan_06",
+          5
+        ],
+        [
+          7,
+          "synthetic_plan_07",
+          4
+        ],
+        [
+          8,
+          "synthetic_plan_08",
+          4
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "name",
+        "value"
+      ],
+      "sql": "SELECT plan_id, name, window_count AS value FROM plan_summary WHERE window_count >= ? ORDER BY plan_id",
+      "answer": "4 plans with at least 4 windows: plan 3 (4), plan 6 (5), plan 7 (4), plan 8 (4).",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 12,
+      "category": "filtering",
+      "question": "Which plans have fewer than 4 rooms?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          1,
+          4
+        ]
+      },
+      "actual_rows": [
+        [
+          1,
+          "synthetic_plan_01",
+          2
+        ],
+        [
+          4,
+          "synthetic_plan_04",
+          3
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "name",
+        "value"
+      ],
+      "sql": "SELECT plan_id, name, room_count AS value FROM plan_summary WHERE room_count < ? ORDER BY plan_id",
+      "answer": "2 plans with fewer than 4 rooms: plan 1 (2), plan 4 (3).",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 13,
+      "category": "windows",
+      "question": "Which room in plan 4 has no windows?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "room_name",
+        "values": [
+          "hallway #2"
+        ]
+      },
+      "actual_rows": [
+        [
+          4,
+          "hallway #2",
+          "hallway",
+          15120
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "room_name",
+        "label",
+        "area_px"
+      ],
+      "sql": "SELECT plan_id, room_name, label, area_px FROM room_details WHERE window_count = 0 AND plan_id = ? ORDER BY room_index",
+      "answer": "1 room in plan 4 with no detected windows: hallway #2. (Based on windows detected in the masks.)",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 14,
+      "category": "windows",
+      "question": "Which rooms have no windows?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "room_name",
+        "values": [
+          "bathroom #2",
+          "bathroom #4",
+          "bathroom #4",
+          "hallway #6",
+          "hallway #2",
+          "bathroom #4",
+          "bathroom #4",
+          "bathroom #8",
+          "hallway #6",
+          "bathroom #2",
+          "bathroom #5",
+          "hallway #3"
+        ]
+      },
+      "actual_rows": [
+        [
+          1,
+          "bathroom #2",
+          "bathroom",
+          14904
+        ],
+        [
+          2,
+          "bathroom #4",
+          "bathroom",
+          16632
+        ],
+        [
+          3,
+          "bathroom #4",
+          "bathroom",
+          16590
+        ],
+        [
+          3,
+          "hallway #6",
+          "hallway",
+          15015
+        ],
+        [
+          4,
+          "hallway #2",
+          "hallway",
+          15120
+        ],
+        [
+          5,
+          "bathroom #4",
+          "bathroom",
+          14605
+        ],
+        [
+          6,
+          "bathroom #4",
+          "bathroom",
+          19592
+        ],
+        [
+          6,
+          "hallway #6",
+          "hallway",
+          14700
+        ],
+        [
+          6,
+          "bathroom #8",
+          "bathroom",
+          15484
+        ],
+        [
+          7,
+          "bathroom #2",
+          "bathroom",
+          16848
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "room_name",
+        "label",
+        "area_px"
+      ],
+      "sql": "SELECT plan_id, room_name, label, area_px FROM room_details WHERE window_count = 0 ORDER BY plan_id, room_index",
+      "answer": "12 rooms in the database with no detected windows: bathroom #2 (plan 1), bathroom #4 (plan 2), bathroom #4 (plan 3), hallway #6 (plan 3), hallway #2 (plan 4), bathroom #4 (plan 5), bathroom #4 (plan 6), hallway #6 (plan 6), bathroom #8 (plan 6), bathroom #2 (plan 7), hallway #3 (plan 8), bathroom #5 (plan 8). (Based on windows detected in the masks.)",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 15,
+      "category": "windows",
+      "question": "Which rooms in plan 1 have no windows?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "room_name",
+        "values": [
+          "bathroom #2"
+        ]
+      },
+      "actual_rows": [
+        [
+          1,
+          "bathroom #2",
+          "bathroom",
+          14904
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "room_name",
+        "label",
+        "area_px"
+      ],
+      "sql": "SELECT plan_id, room_name, label, area_px FROM room_details WHERE window_count = 0 AND plan_id = ? ORDER BY room_index",
+      "answer": "1 room in plan 1 with no detected windows: bathroom #2. (Based on windows detected in the masks.)",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 16,
+      "category": "averages",
+      "question": "What is the average number of rooms across all plans?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 4.75
+      },
+      "actual_rows": [
+        [
+          4.75,
+          8
+        ]
+      ],
+      "actual_columns": [
+        "value",
+        "plan_count"
+      ],
+      "sql": "SELECT ROUND(AVG(room_count), 2) AS value, COUNT(*) AS plan_count FROM plan_summary",
+      "answer": "The average number of rooms per plan across 8 plans is 4.75.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 17,
+      "category": "averages",
+      "question": "What is the average number of doors per plan?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 5.13
+      },
+      "actual_rows": [
+        [
+          5.13,
+          8
+        ]
+      ],
+      "actual_columns": [
+        "value",
+        "plan_count"
+      ],
+      "sql": "SELECT ROUND(AVG(door_count), 2) AS value, COUNT(*) AS plan_count FROM plan_summary",
+      "answer": "The average number of doors per plan across 8 plans is 5.13.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 18,
+      "category": "averages",
+      "question": "What is the average number of windows across all plans?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 3.25
+      },
+      "actual_rows": [
+        [
+          3.25,
+          8
+        ]
+      ],
+      "actual_columns": [
+        "value",
+        "plan_count"
+      ],
+      "sql": "SELECT ROUND(AVG(window_count), 2) AS value, COUNT(*) AS plan_count FROM plan_summary",
+      "answer": "The average number of windows per plan across 8 plans is 3.25.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 19,
+      "category": "extremes",
+      "question": "Which plan has the most rooms?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          6
+        ]
+      },
+      "actual_rows": [
+        [
+          6,
+          "synthetic_plan_06",
+          8
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "name",
+        "value"
+      ],
+      "sql": "SELECT plan_id, name, room_count AS value FROM plan_summary WHERE room_count = (SELECT MAX(room_count) FROM plan_summary) ORDER BY plan_id",
+      "answer": "plan 6 has the most rooms (8).",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 20,
+      "category": "extremes",
+      "question": "Which plan has the most doors?",
+      "correct": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          6,
+          8
+        ]
+      },
+      "actual_rows": [
+        [
+          6,
+          "synthetic_plan_06",
+          8
+        ],
+        [
+          8,
+          "synthetic_plan_08",
+          8
+        ]
+      ],
+      "actual_columns": [
+        "plan_id",
+        "name",
+        "value"
+      ],
+      "sql": "SELECT plan_id, name, door_count AS value FROM plan_summary WHERE door_count = (SELECT MAX(door_count) FROM plan_summary) ORDER BY plan_id",
+      "answer": "plan 6 and plan 8 have the most doors (8).",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 21,
+      "category": "empty_result",
+      "question": "Which plans have more than 20 doors?",
+      "correct": true,
+      "expected_status": "no_results",
+      "actual_status": "no_results",
+      "expected": {
+        "type": "empty"
+      },
+      "actual_rows": [],
+      "actual_columns": [
+        "plan_id",
+        "name",
+        "value"
+      ],
+      "sql": "SELECT plan_id, name, door_count AS value FROM plan_summary WHERE door_count > ? ORDER BY plan_id",
+      "answer": "No plans have more than 20 doors.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 22,
+      "category": "invalid_plan",
+      "question": "How many rooms does plan 12 have?",
+      "correct": true,
+      "expected_status": "invalid_plan",
+      "actual_status": "invalid_plan",
+      "expected": {
+        "type": "status"
+      },
+      "actual_rows": [],
+      "actual_columns": [
+        "id"
+      ],
+      "sql": "SELECT id FROM floor_plans WHERE id = ?",
+      "answer": "Plan 12 does not exist. Available plan numbers: 1\u20138.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 23,
+      "category": "invalid_plan",
+      "question": "What is the largest room in plan 99?",
+      "correct": true,
+      "expected_status": "invalid_plan",
+      "actual_status": "invalid_plan",
+      "expected": {
+        "type": "status"
+      },
+      "actual_rows": [],
+      "actual_columns": [
+        "id"
+      ],
+      "sql": "SELECT id FROM floor_plans WHERE id = ?",
+      "answer": "Plan 99 does not exist. Available plan numbers: 1\u20138.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 24,
+      "category": "ambiguous",
+      "question": "How many doors are there?",
+      "correct": true,
+      "expected_status": "clarification",
+      "actual_status": "clarification",
+      "expected": {
+        "type": "status"
+      },
+      "actual_rows": [],
+      "actual_columns": [],
+      "sql": null,
+      "answer": "Which floor plan do you mean? Please include a plan number, e.g. 'plan 12' (or say 'across all plans').",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 25,
+      "category": "unsupported",
+      "question": "What is the area of the living room in plan 2 in square metres?",
+      "correct": true,
+      "expected_status": "unsupported",
+      "actual_status": "unsupported",
+      "expected": {
+        "type": "status"
+      },
+      "actual_rows": [],
+      "actual_columns": [],
+      "sql": null,
+      "answer": "This can't be determined from the available data: no real-world scale is stored for these floor plans, so areas and lengths exist only in pixels, not metres or feet. Ask for the area in pixels instead.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 26,
+      "category": "unsupported",
+      "question": "Where is the main entrance in plan 5?",
+      "correct": true,
+      "expected_status": "unsupported",
+      "actual_status": "unsupported",
+      "expected": {
+        "type": "status"
+      },
+      "actual_rows": [],
+      "actual_columns": [],
+      "sql": null,
+      "answer": "This can't be determined from the available data: the data does not identify an entrance, and route/navigation answers are not implemented in this build.",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 27,
+      "category": "unsupported",
+      "question": "What colour are the walls in plan 1?",
+      "correct": true,
+      "expected_status": "unsupported",
+      "actual_status": "unsupported",
+      "expected": {
+        "type": "status"
+      },
+      "actual_rows": [],
+      "actual_columns": [],
+      "sql": null,
+      "answer": "This can't be determined from the available data: the database only holds rooms, doors, windows and walls (counts, pixel areas and positions).",
+      "grounded": true,
+      "reason": ""
+    },
+    {
+      "id": 28,
+      "category": "unsupported",
+      "question": "How much furniture is in the living room of plan 3?",
+      "correct": true,
+      "expected_status": "unsupported",
+      "actual_status": "unsupported",
+      "expected": {
+        "type": "status"
+      },
+      "actual_rows": [],
+      "actual_columns": [],
+      "sql": null,
+      "answer": "This can't be determined from the available data: the database only holds rooms, doors, windows and walls (counts, pixel areas and positions).",
+      "grounded": true,
+      "reason": ""
+    }
+  ]
+}

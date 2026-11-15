@@ -1,0 +1,13 @@
+{
+  "name": "REAL_DATASET_TEMPLATE_fill_in_after_inspecting_masks",
+  "description": "Template for colour-coded masks. Replace colours/names with what the real dataset actually uses. Not validated against any real data.",
+  "mask_mode": "rgb",
+  "color_tolerance": 0,
+  "classes": [
+    {"id": 0, "name": "background", "kind": "background", "color": [0, 0, 0]},
+    {"id": 1, "name": "wall",       "kind": "wall",       "color": [255, 255, 255]},
+    {"id": 2, "name": "door",       "kind": "door",       "color": [255, 128, 0]},
+    {"id": 3, "name": "window",     "kind": "window",     "color": [0, 128, 255]},
+    {"id": 4, "name": "room",       "kind": "room",       "color": [128, 128, 128]}
+  ]
+}

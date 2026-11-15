@@ -1,0 +1,15 @@
+{
+  "name": "kaggle_asutoshprad_floorplans",
+  "description": "RGB class map for asutoshprad/floor-plan-dataset (teal interior rooms, structural walls, doors, windows).",
+  "mask_mode": "rgb",
+  "color_tolerance": 5,
+  "classes": [
+    {"id": 0, "name": "background", "kind": "background", "color": [0, 0, 0]},
+    {"id": 1, "name": "room",       "kind": "room",       "color": [0, 142, 142]},
+    {"id": 2, "name": "door",       "kind": "door",       "color": [255, 142, 70]},
+    {"id": 3, "name": "window",     "kind": "window",     "color": [214, 70, 70]},
+    {"id": 4, "name": "wall_main",  "kind": "wall",       "color": [175, 216, 248]},
+    {"id": 5, "name": "wall_alt",   "kind": "wall",       "color": [246, 189, 15]},
+    {"id": 6, "name": "wall_ext",   "kind": "wall",       "color": [139, 186, 0]}
+  ]
+}

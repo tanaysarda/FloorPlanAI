@@ -1,0 +1,2646 @@
+{
+  "dataset_kind": "synthetic",
+  "plans": [
+    {
+      "connections": [
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "dataset": "synthetic",
+      "doors": [
+        {
+          "area_px": 144,
+          "bbox": [
+            162,
+            60,
+            6,
+            24
+          ],
+          "centroid": [
+            164.5,
+            71.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "door",
+          "room_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "area_px": 168,
+          "bbox": [
+            76,
+            126,
+            28,
+            6
+          ],
+          "centroid": [
+            89.5,
+            128.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "door",
+          "room_indices": [
+            1
+          ]
+        }
+      ],
+      "height": 144,
+      "image_path": "data/synthetic/images/synthetic_plan_01.png",
+      "is_synthetic": true,
+      "mask_path": "data/synthetic/masks/synthetic_plan_01.png",
+      "name": "synthetic_plan_01",
+      "plan_id": 1,
+      "rooms": [
+        {
+          "area_px": 15552,
+          "bbox": [
+            18,
+            18,
+            144,
+            108
+          ],
+          "centroid": [
+            89.5,
+            71.5
+          ],
+          "class_id": 10,
+          "index": 1,
+          "label": "living room"
+        },
+        {
+          "area_px": 14904,
+          "bbox": [
+            168,
+            18,
+            138,
+            108
+          ],
+          "centroid": [
+            236.5,
+            71.5
+          ],
+          "class_id": 13,
+          "index": 2,
+          "label": "bathroom"
+        }
+      ],
+      "scale_m_per_px": null,
+      "unknown_pixel_fraction": 0.0,
+      "wall_area_px": 5040,
+      "walls": [
+        {
+          "area_px": 1404,
+          "bbox": [
+            12,
+            12,
+            64,
+            120
+          ],
+          "index": 1
+        },
+        {
+          "area_px": 3636,
+          "bbox": [
+            104,
+            12,
+            208,
+            120
+          ],
+          "index": 2
+        }
+      ],
+      "warnings": [],
+      "width": 324,
+      "windows": [
+        {
+          "area_px": 192,
+          "bbox": [
+            74,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            89.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "window",
+          "room_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "connections": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          4,
+          2
+        ],
+        [
+          3,
+          4,
+          3
+        ]
+      ],
+      "dataset": "synthetic",
+      "doors": [
+        {
+          "area_px": 144,
+          "bbox": [
+            146,
+            63,
+            6,
+            24
+          ],
+          "centroid": [
+            148.5,
+            74.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "door",
+          "room_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            217,
+            132,
+            24,
+            6
+          ],
+          "centroid": [
+            228.5,
+            134.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "door",
+          "room_indices": [
+            2,
+            4
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            146,
+            180,
+            6,
+            24
+          ],
+          "centroid": [
+            148.5,
+            191.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "door",
+          "room_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "area_px": 168,
+          "bbox": [
+            68,
+            246,
+            28,
+            6
+          ],
+          "centroid": [
+            81.5,
+            248.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "door",
+          "room_indices": [
+            3
+          ]
+        }
+      ],
+      "height": 264,
+      "image_path": "data/synthetic/images/synthetic_plan_02.png",
+      "is_synthetic": true,
+      "mask_path": "data/synthetic/masks/synthetic_plan_02.png",
+      "name": "synthetic_plan_02",
+      "plan_id": 2,
+      "rooms": [
+        {
+          "area_px": 14592,
+          "bbox": [
+            18,
+            18,
+            128,
+            114
+          ],
+          "centroid": [
+            81.5,
+            74.5
+          ],
+          "class_id": 10,
+          "index": 1,
+          "label": "living room"
+        },
+        {
+          "area_px": 17556,
+          "bbox": [
+            152,
+            18,
+            154,
+            114
+          ],
+          "centroid": [
+            228.5,
+            74.5
+          ],
+          "class_id": 12,
+          "index": 2,
+          "label": "kitchen"
+        },
+        {
+          "area_px": 13824,
+          "bbox": [
+            18,
+            138,
+            128,
+            108
+          ],
+          "centroid": [
+            81.5,
+            191.5
+          ],
+          "class_id": 11,
+          "index": 3,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 16632,
+          "bbox": [
+            152,
+            138,
+            154,
+            108
+          ],
+          "centroid": [
+            228.5,
+            191.5
+          ],
+          "class_id": 13,
+          "index": 4,
+          "label": "bathroom"
+        }
+      ],
+      "scale_m_per_px": null,
+      "unknown_pixel_fraction": 0.0,
+      "wall_area_px": 8220,
+      "walls": [
+        {
+          "area_px": 2988,
+          "bbox": [
+            12,
+            12,
+            205,
+            168
+          ],
+          "index": 1
+        },
+        {
+          "area_px": 3708,
+          "bbox": [
+            96,
+            12,
+            216,
+            240
+          ],
+          "index": 2
+        },
+        {
+          "area_px": 960,
+          "bbox": [
+            98,
+            12,
+            115,
+            51
+          ],
+          "index": 3
+        },
+        {
+          "area_px": 564,
+          "bbox": [
+            12,
+            208,
+            56,
+            44
+          ],
+          "index": 4
+        }
+      ],
+      "warnings": [],
+      "width": 324,
+      "windows": [
+        {
+          "area_px": 192,
+          "bbox": [
+            66,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            81.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "window",
+          "room_indices": [
+            1
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            213,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            228.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "window",
+          "room_indices": [
+            2
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            12,
+            176,
+            6,
+            32
+          ],
+          "centroid": [
+            14.5,
+            191.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "window",
+          "room_indices": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "connections": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          4,
+          3
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          5,
+          4
+        ],
+        [
+          4,
+          5,
+          5
+        ],
+        [
+          5,
+          6,
+          6
+        ]
+      ],
+      "dataset": "synthetic",
+      "doors": [
+        {
+          "area_px": 144,
+          "bbox": [
+            176,
+            64,
+            6,
+            24
+          ],
+          "centroid": [
+            178.5,
+            75.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "door",
+          "room_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            307,
+            64,
+            6,
+            24
+          ],
+          "centroid": [
+            309.5,
+            75.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "door",
+          "room_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            85,
+            135,
+            24,
+            6
+          ],
+          "centroid": [
+            96.5,
+            137.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "door",
+          "room_indices": [
+            1,
+            4
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            232,
+            135,
+            24,
+            6
+          ],
+          "centroid": [
+            243.5,
+            137.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "door",
+          "room_indices": [
+            2,
+            5
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            176,
+            181,
+            6,
+            24
+          ],
+          "centroid": [
+            178.5,
+            192.5
+          ],
+          "class_id": -1,
+          "index": 5,
+          "kind": "door",
+          "room_indices": [
+            4,
+            5
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            307,
+            181,
+            6,
+            24
+          ],
+          "centroid": [
+            309.5,
+            192.5
+          ],
+          "class_id": -1,
+          "index": 6,
+          "kind": "door",
+          "room_indices": [
+            5,
+            6
+          ]
+        },
+        {
+          "area_px": 168,
+          "bbox": [
+            83,
+            246,
+            28,
+            6
+          ],
+          "centroid": [
+            96.5,
+            248.5
+          ],
+          "class_id": -1,
+          "index": 7,
+          "kind": "door",
+          "room_indices": [
+            4
+          ]
+        }
+      ],
+      "height": 264,
+      "image_path": "data/synthetic/images/synthetic_plan_03.png",
+      "is_synthetic": true,
+      "mask_path": "data/synthetic/masks/synthetic_plan_03.png",
+      "name": "synthetic_plan_03",
+      "plan_id": 3,
+      "rooms": [
+        {
+          "area_px": 18486,
+          "bbox": [
+            18,
+            18,
+            158,
+            117
+          ],
+          "centroid": [
+            96.5,
+            76.0
+          ],
+          "class_id": 10,
+          "index": 1,
+          "label": "living room"
+        },
+        {
+          "area_px": 14625,
+          "bbox": [
+            182,
+            18,
+            125,
+            117
+          ],
+          "centroid": [
+            244.0,
+            76.0
+          ],
+          "class_id": 12,
+          "index": 2,
+          "label": "kitchen"
+        },
+        {
+          "area_px": 16731,
+          "bbox": [
+            313,
+            18,
+            143,
+            117
+          ],
+          "centroid": [
+            384.0,
+            76.0
+          ],
+          "class_id": 11,
+          "index": 3,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 16590,
+          "bbox": [
+            18,
+            141,
+            158,
+            105
+          ],
+          "centroid": [
+            96.5,
+            193.0
+          ],
+          "class_id": 13,
+          "index": 4,
+          "label": "bathroom"
+        },
+        {
+          "area_px": 13125,
+          "bbox": [
+            182,
+            141,
+            125,
+            105
+          ],
+          "centroid": [
+            244.0,
+            193.0
+          ],
+          "class_id": 11,
+          "index": 5,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 15015,
+          "bbox": [
+            313,
+            141,
+            143,
+            105
+          ],
+          "centroid": [
+            384.0,
+            193.0
+          ],
+          "class_id": 14,
+          "index": 6,
+          "label": "hallway"
+        }
+      ],
+      "scale_m_per_px": null,
+      "unknown_pixel_fraction": 0.0,
+      "wall_area_px": 11628,
+      "walls": [
+        {
+          "area_px": 2610,
+          "bbox": [
+            12,
+            12,
+            73,
+            240
+          ],
+          "index": 1
+        },
+        {
+          "area_px": 966,
+          "bbox": [
+            113,
+            12,
+            115,
+            52
+          ],
+          "index": 2
+        },
+        {
+          "area_px": 4920,
+          "bbox": [
+            256,
+            12,
+            206,
+            240
+          ],
+          "index": 3
+        },
+        {
+          "area_px": 924,
+          "bbox": [
+            260,
+            12,
+            108,
+            52
+          ],
+          "index": 4
+        },
+        {
+          "area_px": 1260,
+          "bbox": [
+            109,
+            88,
+            123,
+            93
+          ],
+          "index": 5
+        },
+        {
+          "area_px": 948,
+          "bbox": [
+            111,
+            205,
+            117,
+            47
+          ],
+          "index": 6
+        }
+      ],
+      "warnings": [],
+      "width": 474,
+      "windows": [
+        {
+          "area_px": 192,
+          "bbox": [
+            81,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            96.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "window",
+          "room_indices": [
+            1
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            228,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            243.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "window",
+          "room_indices": [
+            2
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            368,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            383.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "window",
+          "room_indices": [
+            3
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            228,
+            246,
+            32,
+            6
+          ],
+          "centroid": [
+            243.5,
+            248.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "window",
+          "room_indices": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "connections": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ]
+      ],
+      "dataset": "synthetic",
+      "doors": [
+        {
+          "area_px": 144,
+          "bbox": [
+            176,
+            60,
+            6,
+            24
+          ],
+          "centroid": [
+            178.5,
+            71.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "door",
+          "room_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            322,
+            60,
+            6,
+            24
+          ],
+          "centroid": [
+            324.5,
+            71.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "door",
+          "room_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "area_px": 168,
+          "bbox": [
+            83,
+            126,
+            28,
+            6
+          ],
+          "centroid": [
+            96.5,
+            128.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "door",
+          "room_indices": [
+            1
+          ]
+        }
+      ],
+      "height": 144,
+      "image_path": "data/synthetic/images/synthetic_plan_04.png",
+      "is_synthetic": true,
+      "mask_path": "data/synthetic/masks/synthetic_plan_04.png",
+      "name": "synthetic_plan_04",
+      "plan_id": 4,
+      "rooms": [
+        {
+          "area_px": 17064,
+          "bbox": [
+            18,
+            18,
+            158,
+            108
+          ],
+          "centroid": [
+            96.5,
+            71.5
+          ],
+          "class_id": 11,
+          "index": 1,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 15120,
+          "bbox": [
+            182,
+            18,
+            140,
+            108
+          ],
+          "centroid": [
+            251.5,
+            71.5
+          ],
+          "class_id": 14,
+          "index": 2,
+          "label": "hallway"
+        },
+        {
+          "area_px": 13824,
+          "bbox": [
+            328,
+            18,
+            128,
+            108
+          ],
+          "centroid": [
+            391.5,
+            71.5
+          ],
+          "class_id": 12,
+          "index": 3,
+          "label": "kitchen"
+        }
+      ],
+      "scale_m_per_px": null,
+      "unknown_pixel_fraction": 0.0,
+      "wall_area_px": 7152,
+      "walls": [
+        {
+          "area_px": 1488,
+          "bbox": [
+            12,
+            12,
+            71,
+            120
+          ],
+          "index": 1
+        },
+        {
+          "area_px": 3582,
+          "bbox": [
+            111,
+            12,
+            351,
+            120
+          ],
+          "index": 2
+        },
+        {
+          "area_px": 2082,
+          "bbox": [
+            113,
+            12,
+            263,
+            48
+          ],
+          "index": 3
+        }
+      ],
+      "warnings": [],
+      "width": 474,
+      "windows": [
+        {
+          "area_px": 192,
+          "bbox": [
+            81,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            96.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "window",
+          "room_indices": [
+            1
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            376,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            391.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "window",
+          "room_indices": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "connections": [
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          2
+        ],
+        [
+          3,
+          4,
+          3
+        ]
+      ],
+      "dataset": "synthetic",
+      "doors": [
+        {
+          "area_px": 144,
+          "bbox": [
+            83,
+            125,
+            24,
+            6
+          ],
+          "centroid": [
+            94.5,
+            127.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "door",
+          "room_indices": [
+            1,
+            3
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            230,
+            125,
+            24,
+            6
+          ],
+          "centroid": [
+            241.5,
+            127.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "door",
+          "room_indices": [
+            2,
+            4
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            173,
+            176,
+            6,
+            24
+          ],
+          "centroid": [
+            175.5,
+            187.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "door",
+          "room_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "area_px": 168,
+          "bbox": [
+            81,
+            246,
+            28,
+            6
+          ],
+          "centroid": [
+            94.5,
+            248.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "door",
+          "room_indices": [
+            3
+          ]
+        }
+      ],
+      "height": 264,
+      "image_path": "data/synthetic/images/synthetic_plan_05.png",
+      "is_synthetic": true,
+      "mask_path": "data/synthetic/masks/synthetic_plan_05.png",
+      "name": "synthetic_plan_05",
+      "plan_id": 5,
+      "rooms": [
+        {
+          "area_px": 16585,
+          "bbox": [
+            18,
+            18,
+            155,
+            107
+          ],
+          "centroid": [
+            95.0,
+            71.0
+          ],
+          "class_id": 11,
+          "index": 1,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 13589,
+          "bbox": [
+            179,
+            18,
+            127,
+            107
+          ],
+          "centroid": [
+            242.0,
+            71.0
+          ],
+          "class_id": 11,
+          "index": 2,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 17825,
+          "bbox": [
+            18,
+            131,
+            155,
+            115
+          ],
+          "centroid": [
+            95.0,
+            188.0
+          ],
+          "class_id": 10,
+          "index": 3,
+          "label": "living room"
+        },
+        {
+          "area_px": 14605,
+          "bbox": [
+            179,
+            131,
+            127,
+            115
+          ],
+          "centroid": [
+            242.0,
+            188.0
+          ],
+          "class_id": 13,
+          "index": 4,
+          "label": "bathroom"
+        }
+      ],
+      "scale_m_per_px": null,
+      "unknown_pixel_fraction": 0.0,
+      "wall_area_px": 8220,
+      "walls": [
+        {
+          "area_px": 1716,
+          "bbox": [
+            12,
+            12,
+            71,
+            160
+          ],
+          "index": 1
+        },
+        {
+          "area_px": 2340,
+          "bbox": [
+            107,
+            12,
+            123,
+            164
+          ],
+          "index": 2
+        },
+        {
+          "area_px": 3498,
+          "bbox": [
+            109,
+            12,
+            203,
+            240
+          ],
+          "index": 3
+        },
+        {
+          "area_px": 666,
+          "bbox": [
+            12,
+            204,
+            69,
+            48
+          ],
+          "index": 4
+        }
+      ],
+      "warnings": [],
+      "width": 324,
+      "windows": [
+        {
+          "area_px": 192,
+          "bbox": [
+            79,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            94.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "window",
+          "room_indices": [
+            1
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            226,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            241.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "window",
+          "room_indices": [
+            2
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            12,
+            172,
+            6,
+            32
+          ],
+          "centroid": [
+            14.5,
+            187.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "window",
+          "room_indices": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "connections": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          5,
+          3
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          6,
+          4
+        ],
+        [
+          3,
+          7,
+          5
+        ],
+        [
+          4,
+          8,
+          6
+        ],
+        [
+          7,
+          8,
+          7
+        ]
+      ],
+      "dataset": "synthetic",
+      "doors": [
+        {
+          "area_px": 144,
+          "bbox": [
+            167,
+            68,
+            6,
+            24
+          ],
+          "centroid": [
+            169.5,
+            79.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "door",
+          "room_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            323,
+            68,
+            6,
+            24
+          ],
+          "centroid": [
+            325.5,
+            79.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "door",
+          "room_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            80,
+            142,
+            24,
+            6
+          ],
+          "centroid": [
+            91.5,
+            144.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "door",
+          "room_indices": [
+            1,
+            5
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            236,
+            142,
+            24,
+            6
+          ],
+          "centroid": [
+            247.5,
+            144.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "door",
+          "room_indices": [
+            2,
+            6
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            373,
+            142,
+            24,
+            6
+          ],
+          "centroid": [
+            384.5,
+            144.5
+          ],
+          "class_id": -1,
+          "index": 5,
+          "kind": "door",
+          "room_indices": [
+            3,
+            7
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            515,
+            142,
+            24,
+            6
+          ],
+          "centroid": [
+            526.5,
+            144.5
+          ],
+          "class_id": -1,
+          "index": 6,
+          "kind": "door",
+          "room_indices": [
+            4,
+            8
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            442,
+            185,
+            6,
+            24
+          ],
+          "centroid": [
+            444.5,
+            196.5
+          ],
+          "class_id": -1,
+          "index": 7,
+          "kind": "door",
+          "room_indices": [
+            7,
+            8
+          ]
+        },
+        {
+          "area_px": 168,
+          "bbox": [
+            78,
+            246,
+            28,
+            6
+          ],
+          "centroid": [
+            91.5,
+            248.5
+          ],
+          "class_id": -1,
+          "index": 8,
+          "kind": "door",
+          "room_indices": [
+            5
+          ]
+        }
+      ],
+      "height": 264,
+      "image_path": "data/synthetic/images/synthetic_plan_06.png",
+      "is_synthetic": true,
+      "mask_path": "data/synthetic/masks/synthetic_plan_06.png",
+      "name": "synthetic_plan_06",
+      "plan_id": 6,
+      "rooms": [
+        {
+          "area_px": 18476,
+          "bbox": [
+            18,
+            18,
+            149,
+            124
+          ],
+          "centroid": [
+            92.0,
+            79.5
+          ],
+          "class_id": 10,
+          "index": 1,
+          "label": "living room"
+        },
+        {
+          "area_px": 18600,
+          "bbox": [
+            173,
+            18,
+            150,
+            124
+          ],
+          "centroid": [
+            247.5,
+            79.5
+          ],
+          "class_id": 12,
+          "index": 2,
+          "label": "kitchen"
+        },
+        {
+          "area_px": 14012,
+          "bbox": [
+            329,
+            18,
+            113,
+            124
+          ],
+          "centroid": [
+            385.0,
+            79.5
+          ],
+          "class_id": 11,
+          "index": 3,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 19592,
+          "bbox": [
+            448,
+            18,
+            158,
+            124
+          ],
+          "centroid": [
+            526.5,
+            79.5
+          ],
+          "class_id": 13,
+          "index": 4,
+          "label": "bathroom"
+        },
+        {
+          "area_px": 14602,
+          "bbox": [
+            18,
+            148,
+            149,
+            98
+          ],
+          "centroid": [
+            92.0,
+            196.5
+          ],
+          "class_id": 11,
+          "index": 5,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 14700,
+          "bbox": [
+            173,
+            148,
+            150,
+            98
+          ],
+          "centroid": [
+            247.5,
+            196.5
+          ],
+          "class_id": 14,
+          "index": 6,
+          "label": "hallway"
+        },
+        {
+          "area_px": 11074,
+          "bbox": [
+            329,
+            148,
+            113,
+            98
+          ],
+          "centroid": [
+            385.0,
+            196.5
+          ],
+          "class_id": 11,
+          "index": 7,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 15484,
+          "bbox": [
+            448,
+            148,
+            158,
+            98
+          ],
+          "centroid": [
+            526.5,
+            196.5
+          ],
+          "class_id": 13,
+          "index": 8,
+          "label": "bathroom"
+        }
+      ],
+      "scale_m_per_px": null,
+      "unknown_pixel_fraction": 0.0,
+      "wall_area_px": 15324,
+      "walls": [
+        {
+          "area_px": 1734,
+          "bbox": [
+            12,
+            12,
+            68,
+            169
+          ],
+          "index": 1
+        },
+        {
+          "area_px": 1044,
+          "bbox": [
+            108,
+            12,
+            124,
+            56
+          ],
+          "index": 2
+        },
+        {
+          "area_px": 930,
+          "bbox": [
+            264,
+            12,
+            105,
+            56
+          ],
+          "index": 3
+        },
+        {
+          "area_px": 6198,
+          "bbox": [
+            397,
+            12,
+            215,
+            240
+          ],
+          "index": 4
+        },
+        {
+          "area_px": 4824,
+          "bbox": [
+            104,
+            92,
+            269,
+            160
+          ],
+          "index": 5
+        },
+        {
+          "area_px": 594,
+          "bbox": [
+            12,
+            213,
+            66,
+            39
+          ],
+          "index": 6
+        }
+      ],
+      "warnings": [],
+      "width": 624,
+      "windows": [
+        {
+          "area_px": 192,
+          "bbox": [
+            76,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            91.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "window",
+          "room_indices": [
+            1
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            232,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            247.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "window",
+          "room_indices": [
+            2
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            369,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            384.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "window",
+          "room_indices": [
+            3
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            12,
+            181,
+            6,
+            32
+          ],
+          "centroid": [
+            14.5,
+            196.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "window",
+          "room_indices": [
+            5
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            369,
+            246,
+            32,
+            6
+          ],
+          "centroid": [
+            384.5,
+            248.5
+          ],
+          "class_id": -1,
+          "index": 5,
+          "kind": "window",
+          "room_indices": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "connections": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          3
+        ],
+        [
+          4,
+          5,
+          4
+        ]
+      ],
+      "dataset": "synthetic",
+      "doors": [
+        {
+          "area_px": 144,
+          "bbox": [
+            150,
+            60,
+            6,
+            24
+          ],
+          "centroid": [
+            152.5,
+            71.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "door",
+          "room_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            312,
+            60,
+            6,
+            24
+          ],
+          "centroid": [
+            314.5,
+            71.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "door",
+          "room_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            476,
+            60,
+            6,
+            24
+          ],
+          "centroid": [
+            478.5,
+            71.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "door",
+          "room_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            615,
+            60,
+            6,
+            24
+          ],
+          "centroid": [
+            617.5,
+            71.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "door",
+          "room_indices": [
+            4,
+            5
+          ]
+        },
+        {
+          "area_px": 168,
+          "bbox": [
+            70,
+            126,
+            28,
+            6
+          ],
+          "centroid": [
+            83.5,
+            128.5
+          ],
+          "class_id": -1,
+          "index": 5,
+          "kind": "door",
+          "room_indices": [
+            1
+          ]
+        }
+      ],
+      "height": 144,
+      "image_path": "data/synthetic/images/synthetic_plan_07.png",
+      "is_synthetic": true,
+      "mask_path": "data/synthetic/masks/synthetic_plan_07.png",
+      "name": "synthetic_plan_07",
+      "plan_id": 7,
+      "rooms": [
+        {
+          "area_px": 14256,
+          "bbox": [
+            18,
+            18,
+            132,
+            108
+          ],
+          "centroid": [
+            83.5,
+            71.5
+          ],
+          "class_id": 11,
+          "index": 1,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 16848,
+          "bbox": [
+            156,
+            18,
+            156,
+            108
+          ],
+          "centroid": [
+            233.5,
+            71.5
+          ],
+          "class_id": 13,
+          "index": 2,
+          "label": "bathroom"
+        },
+        {
+          "area_px": 17064,
+          "bbox": [
+            318,
+            18,
+            158,
+            108
+          ],
+          "centroid": [
+            396.5,
+            71.5
+          ],
+          "class_id": 10,
+          "index": 3,
+          "label": "living room"
+        },
+        {
+          "area_px": 14364,
+          "bbox": [
+            482,
+            18,
+            133,
+            108
+          ],
+          "centroid": [
+            548.0,
+            71.5
+          ],
+          "class_id": 12,
+          "index": 4,
+          "label": "kitchen"
+        },
+        {
+          "area_px": 14580,
+          "bbox": [
+            621,
+            18,
+            135,
+            108
+          ],
+          "centroid": [
+            688.0,
+            71.5
+          ],
+          "class_id": 11,
+          "index": 5,
+          "label": "bedroom"
+        }
+      ],
+      "scale_m_per_px": null,
+      "unknown_pixel_fraction": 0.0,
+      "wall_area_px": 11376,
+      "walls": [
+        {
+          "area_px": 1332,
+          "bbox": [
+            12,
+            12,
+            58,
+            120
+          ],
+          "index": 1
+        },
+        {
+          "area_px": 5988,
+          "bbox": [
+            98,
+            12,
+            664,
+            120
+          ],
+          "index": 2
+        },
+        {
+          "area_px": 2190,
+          "bbox": [
+            100,
+            12,
+            281,
+            48
+          ],
+          "index": 3
+        },
+        {
+          "area_px": 966,
+          "bbox": [
+            413,
+            12,
+            119,
+            48
+          ],
+          "index": 4
+        },
+        {
+          "area_px": 900,
+          "bbox": [
+            564,
+            12,
+            108,
+            48
+          ],
+          "index": 5
+        }
+      ],
+      "warnings": [],
+      "width": 774,
+      "windows": [
+        {
+          "area_px": 192,
+          "bbox": [
+            68,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            83.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "window",
+          "room_indices": [
+            1
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            381,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            396.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "window",
+          "room_indices": [
+            3
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            532,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            547.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "window",
+          "room_indices": [
+            4
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            672,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            687.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "window",
+          "room_indices": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "connections": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          4,
+          3
+        ],
+        [
+          3,
+          4,
+          4
+        ],
+        [
+          3,
+          5,
+          5
+        ],
+        [
+          4,
+          6,
+          6
+        ],
+        [
+          5,
+          6,
+          7
+        ]
+      ],
+      "dataset": "synthetic",
+      "doors": [
+        {
+          "area_px": 144,
+          "bbox": [
+            146,
+            66,
+            6,
+            24
+          ],
+          "centroid": [
+            148.5,
+            77.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "door",
+          "room_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            70,
+            138,
+            24,
+            6
+          ],
+          "centroid": [
+            81.5,
+            140.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "door",
+          "room_indices": [
+            1,
+            3
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            217,
+            138,
+            24,
+            6
+          ],
+          "centroid": [
+            228.5,
+            140.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "door",
+          "room_indices": [
+            2,
+            4
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            146,
+            190,
+            6,
+            24
+          ],
+          "centroid": [
+            148.5,
+            201.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "door",
+          "room_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            70,
+            260,
+            24,
+            6
+          ],
+          "centroid": [
+            81.5,
+            262.5
+          ],
+          "class_id": -1,
+          "index": 5,
+          "kind": "door",
+          "room_indices": [
+            3,
+            5
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            217,
+            260,
+            24,
+            6
+          ],
+          "centroid": [
+            228.5,
+            262.5
+          ],
+          "class_id": -1,
+          "index": 6,
+          "kind": "door",
+          "room_indices": [
+            4,
+            6
+          ]
+        },
+        {
+          "area_px": 144,
+          "bbox": [
+            146,
+            304,
+            6,
+            24
+          ],
+          "centroid": [
+            148.5,
+            315.5
+          ],
+          "class_id": -1,
+          "index": 7,
+          "kind": "door",
+          "room_indices": [
+            5,
+            6
+          ]
+        },
+        {
+          "area_px": 168,
+          "bbox": [
+            68,
+            366,
+            28,
+            6
+          ],
+          "centroid": [
+            81.5,
+            368.5
+          ],
+          "class_id": -1,
+          "index": 8,
+          "kind": "door",
+          "room_indices": [
+            5
+          ]
+        }
+      ],
+      "height": 384,
+      "image_path": "data/synthetic/images/synthetic_plan_08.png",
+      "is_synthetic": true,
+      "mask_path": "data/synthetic/masks/synthetic_plan_08.png",
+      "name": "synthetic_plan_08",
+      "plan_id": 8,
+      "rooms": [
+        {
+          "area_px": 15360,
+          "bbox": [
+            18,
+            18,
+            128,
+            120
+          ],
+          "centroid": [
+            81.5,
+            77.5
+          ],
+          "class_id": 10,
+          "index": 1,
+          "label": "living room"
+        },
+        {
+          "area_px": 18480,
+          "bbox": [
+            152,
+            18,
+            154,
+            120
+          ],
+          "centroid": [
+            228.5,
+            77.5
+          ],
+          "class_id": 12,
+          "index": 2,
+          "label": "kitchen"
+        },
+        {
+          "area_px": 14848,
+          "bbox": [
+            18,
+            144,
+            128,
+            116
+          ],
+          "centroid": [
+            81.5,
+            201.5
+          ],
+          "class_id": 14,
+          "index": 3,
+          "label": "hallway"
+        },
+        {
+          "area_px": 17864,
+          "bbox": [
+            152,
+            144,
+            154,
+            116
+          ],
+          "centroid": [
+            228.5,
+            201.5
+          ],
+          "class_id": 11,
+          "index": 4,
+          "label": "bedroom"
+        },
+        {
+          "area_px": 12800,
+          "bbox": [
+            18,
+            266,
+            128,
+            100
+          ],
+          "centroid": [
+            81.5,
+            315.5
+          ],
+          "class_id": 13,
+          "index": 5,
+          "label": "bathroom"
+        },
+        {
+          "area_px": 15400,
+          "bbox": [
+            152,
+            266,
+            154,
+            100
+          ],
+          "centroid": [
+            228.5,
+            315.5
+          ],
+          "class_id": 11,
+          "index": 6,
+          "label": "bedroom"
+        }
+      ],
+      "scale_m_per_px": null,
+      "unknown_pixel_fraction": 0.0,
+      "wall_area_px": 11304,
+      "walls": [
+        {
+          "area_px": 3372,
+          "bbox": [
+            12,
+            12,
+            58,
+            360
+          ],
+          "index": 1
+        },
+        {
+          "area_px": 978,
+          "bbox": [
+            98,
+            12,
+            115,
+            54
+          ],
+          "index": 2
+        },
+        {
+          "area_px": 1800,
+          "bbox": [
+            241,
+            12,
+            71,
+            174
+          ],
+          "index": 3
+        },
+        {
+          "area_px": 1302,
+          "bbox": [
+            94,
+            90,
+            123,
+            100
+          ],
+          "index": 4
+        },
+        {
+          "area_px": 1242,
+          "bbox": [
+            94,
+            214,
+            123,
+            90
+          ],
+          "index": 5
+        },
+        {
+          "area_px": 1680,
+          "bbox": [
+            241,
+            218,
+            71,
+            154
+          ],
+          "index": 6
+        },
+        {
+          "area_px": 930,
+          "bbox": [
+            96,
+            328,
+            117,
+            44
+          ],
+          "index": 7
+        }
+      ],
+      "warnings": [],
+      "width": 324,
+      "windows": [
+        {
+          "area_px": 192,
+          "bbox": [
+            66,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            81.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 1,
+          "kind": "window",
+          "room_indices": [
+            1
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            213,
+            12,
+            32,
+            6
+          ],
+          "centroid": [
+            228.5,
+            14.5
+          ],
+          "class_id": -1,
+          "index": 2,
+          "kind": "window",
+          "room_indices": [
+            2
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            306,
+            186,
+            6,
+            32
+          ],
+          "centroid": [
+            308.5,
+            201.5
+          ],
+          "class_id": -1,
+          "index": 3,
+          "kind": "window",
+          "room_indices": [
+            4
+          ]
+        },
+        {
+          "area_px": 192,
+          "bbox": [
+            213,
+            366,
+            32,
+            6
+          ],
+          "centroid": [
+            228.5,
+            368.5
+          ],
+          "class_id": -1,
+          "index": 4,
+          "kind": "window",
+          "room_indices": [
+            6
+          ]
+        }
+      ]
+    }
+  ]
+}

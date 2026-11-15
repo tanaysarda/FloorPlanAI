@@ -1,0 +1,853 @@
+{
+  "synthetic": true,
+  "note": "SYNTHETIC TEST DATA. Independent ground truth for tests/evaluation.",
+  "plans": [
+    {
+      "name": "synthetic_plan_01",
+      "rooms": [
+        {
+          "cell_index": 0,
+          "label": "living room",
+          "area_px": 15552,
+          "bbox": [
+            18,
+            18,
+            144,
+            108
+          ]
+        },
+        {
+          "cell_index": 1,
+          "label": "bathroom",
+          "area_px": 14904,
+          "bbox": [
+            168,
+            18,
+            138,
+            108
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "rooms": [
+            0,
+            1
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0
+          ],
+          "kind": "entrance"
+        }
+      ],
+      "windows": [
+        {
+          "room": 0
+        }
+      ]
+    },
+    {
+      "name": "synthetic_plan_02",
+      "rooms": [
+        {
+          "cell_index": 0,
+          "label": "living room",
+          "area_px": 14592,
+          "bbox": [
+            18,
+            18,
+            128,
+            114
+          ]
+        },
+        {
+          "cell_index": 1,
+          "label": "kitchen",
+          "area_px": 17556,
+          "bbox": [
+            152,
+            18,
+            154,
+            114
+          ]
+        },
+        {
+          "cell_index": 2,
+          "label": "bedroom",
+          "area_px": 13824,
+          "bbox": [
+            18,
+            138,
+            128,
+            108
+          ]
+        },
+        {
+          "cell_index": 3,
+          "label": "bathroom",
+          "area_px": 16632,
+          "bbox": [
+            152,
+            138,
+            154,
+            108
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "rooms": [
+            2,
+            3
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0,
+            1
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            1,
+            3
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            2
+          ],
+          "kind": "entrance"
+        }
+      ],
+      "windows": [
+        {
+          "room": 0
+        },
+        {
+          "room": 1
+        },
+        {
+          "room": 2
+        }
+      ]
+    },
+    {
+      "name": "synthetic_plan_03",
+      "rooms": [
+        {
+          "cell_index": 0,
+          "label": "living room",
+          "area_px": 18486,
+          "bbox": [
+            18,
+            18,
+            158,
+            117
+          ]
+        },
+        {
+          "cell_index": 1,
+          "label": "kitchen",
+          "area_px": 14625,
+          "bbox": [
+            182,
+            18,
+            125,
+            117
+          ]
+        },
+        {
+          "cell_index": 2,
+          "label": "bedroom",
+          "area_px": 16731,
+          "bbox": [
+            313,
+            18,
+            143,
+            117
+          ]
+        },
+        {
+          "cell_index": 3,
+          "label": "bathroom",
+          "area_px": 16590,
+          "bbox": [
+            18,
+            141,
+            158,
+            105
+          ]
+        },
+        {
+          "cell_index": 4,
+          "label": "bedroom",
+          "area_px": 13125,
+          "bbox": [
+            182,
+            141,
+            125,
+            105
+          ]
+        },
+        {
+          "cell_index": 5,
+          "label": "hallway",
+          "area_px": 15015,
+          "bbox": [
+            313,
+            141,
+            143,
+            105
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "rooms": [
+            1,
+            4
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            4,
+            5
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            1,
+            2
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0,
+            1
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0,
+            3
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            3,
+            4
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            3
+          ],
+          "kind": "entrance"
+        }
+      ],
+      "windows": [
+        {
+          "room": 0
+        },
+        {
+          "room": 1
+        },
+        {
+          "room": 2
+        },
+        {
+          "room": 4
+        }
+      ]
+    },
+    {
+      "name": "synthetic_plan_04",
+      "rooms": [
+        {
+          "cell_index": 0,
+          "label": "bedroom",
+          "area_px": 17064,
+          "bbox": [
+            18,
+            18,
+            158,
+            108
+          ]
+        },
+        {
+          "cell_index": 1,
+          "label": "hallway",
+          "area_px": 15120,
+          "bbox": [
+            182,
+            18,
+            140,
+            108
+          ]
+        },
+        {
+          "cell_index": 2,
+          "label": "kitchen",
+          "area_px": 13824,
+          "bbox": [
+            328,
+            18,
+            128,
+            108
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "rooms": [
+            1,
+            2
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0,
+            1
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0
+          ],
+          "kind": "entrance"
+        }
+      ],
+      "windows": [
+        {
+          "room": 0
+        },
+        {
+          "room": 2
+        }
+      ]
+    },
+    {
+      "name": "synthetic_plan_05",
+      "rooms": [
+        {
+          "cell_index": 0,
+          "label": "bedroom",
+          "area_px": 16585,
+          "bbox": [
+            18,
+            18,
+            155,
+            107
+          ]
+        },
+        {
+          "cell_index": 1,
+          "label": "bedroom",
+          "area_px": 13589,
+          "bbox": [
+            179,
+            18,
+            127,
+            107
+          ]
+        },
+        {
+          "cell_index": 2,
+          "label": "living room",
+          "area_px": 17825,
+          "bbox": [
+            18,
+            131,
+            155,
+            115
+          ]
+        },
+        {
+          "cell_index": 3,
+          "label": "bathroom",
+          "area_px": 14605,
+          "bbox": [
+            179,
+            131,
+            127,
+            115
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "rooms": [
+            1,
+            3
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0,
+            2
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            2,
+            3
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            2
+          ],
+          "kind": "entrance"
+        }
+      ],
+      "windows": [
+        {
+          "room": 0
+        },
+        {
+          "room": 1
+        },
+        {
+          "room": 2
+        }
+      ]
+    },
+    {
+      "name": "synthetic_plan_06",
+      "rooms": [
+        {
+          "cell_index": 0,
+          "label": "living room",
+          "area_px": 18476,
+          "bbox": [
+            18,
+            18,
+            149,
+            124
+          ]
+        },
+        {
+          "cell_index": 1,
+          "label": "kitchen",
+          "area_px": 18600,
+          "bbox": [
+            173,
+            18,
+            150,
+            124
+          ]
+        },
+        {
+          "cell_index": 2,
+          "label": "bedroom",
+          "area_px": 14012,
+          "bbox": [
+            329,
+            18,
+            113,
+            124
+          ]
+        },
+        {
+          "cell_index": 3,
+          "label": "bathroom",
+          "area_px": 19592,
+          "bbox": [
+            448,
+            18,
+            158,
+            124
+          ]
+        },
+        {
+          "cell_index": 4,
+          "label": "bedroom",
+          "area_px": 14602,
+          "bbox": [
+            18,
+            148,
+            149,
+            98
+          ]
+        },
+        {
+          "cell_index": 5,
+          "label": "hallway",
+          "area_px": 14700,
+          "bbox": [
+            173,
+            148,
+            150,
+            98
+          ]
+        },
+        {
+          "cell_index": 6,
+          "label": "bedroom",
+          "area_px": 11074,
+          "bbox": [
+            329,
+            148,
+            113,
+            98
+          ]
+        },
+        {
+          "cell_index": 7,
+          "label": "bathroom",
+          "area_px": 15484,
+          "bbox": [
+            448,
+            148,
+            158,
+            98
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "rooms": [
+            2,
+            6
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            1,
+            2
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            6,
+            7
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            1,
+            5
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0,
+            4
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            3,
+            7
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0,
+            1
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            4
+          ],
+          "kind": "entrance"
+        }
+      ],
+      "windows": [
+        {
+          "room": 0
+        },
+        {
+          "room": 1
+        },
+        {
+          "room": 2
+        },
+        {
+          "room": 4
+        },
+        {
+          "room": 6
+        }
+      ]
+    },
+    {
+      "name": "synthetic_plan_07",
+      "rooms": [
+        {
+          "cell_index": 0,
+          "label": "bedroom",
+          "area_px": 14256,
+          "bbox": [
+            18,
+            18,
+            132,
+            108
+          ]
+        },
+        {
+          "cell_index": 1,
+          "label": "bathroom",
+          "area_px": 16848,
+          "bbox": [
+            156,
+            18,
+            156,
+            108
+          ]
+        },
+        {
+          "cell_index": 2,
+          "label": "living room",
+          "area_px": 17064,
+          "bbox": [
+            318,
+            18,
+            158,
+            108
+          ]
+        },
+        {
+          "cell_index": 3,
+          "label": "kitchen",
+          "area_px": 14364,
+          "bbox": [
+            482,
+            18,
+            133,
+            108
+          ]
+        },
+        {
+          "cell_index": 4,
+          "label": "bedroom",
+          "area_px": 14580,
+          "bbox": [
+            621,
+            18,
+            135,
+            108
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "rooms": [
+            2,
+            3
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0,
+            1
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            1,
+            2
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            3,
+            4
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0
+          ],
+          "kind": "entrance"
+        }
+      ],
+      "windows": [
+        {
+          "room": 0
+        },
+        {
+          "room": 2
+        },
+        {
+          "room": 3
+        },
+        {
+          "room": 4
+        }
+      ]
+    },
+    {
+      "name": "synthetic_plan_08",
+      "rooms": [
+        {
+          "cell_index": 0,
+          "label": "living room",
+          "area_px": 15360,
+          "bbox": [
+            18,
+            18,
+            128,
+            120
+          ]
+        },
+        {
+          "cell_index": 1,
+          "label": "kitchen",
+          "area_px": 18480,
+          "bbox": [
+            152,
+            18,
+            154,
+            120
+          ]
+        },
+        {
+          "cell_index": 2,
+          "label": "hallway",
+          "area_px": 14848,
+          "bbox": [
+            18,
+            144,
+            128,
+            116
+          ]
+        },
+        {
+          "cell_index": 3,
+          "label": "bedroom",
+          "area_px": 17864,
+          "bbox": [
+            152,
+            144,
+            154,
+            116
+          ]
+        },
+        {
+          "cell_index": 4,
+          "label": "bathroom",
+          "area_px": 12800,
+          "bbox": [
+            18,
+            266,
+            128,
+            100
+          ]
+        },
+        {
+          "cell_index": 5,
+          "label": "bedroom",
+          "area_px": 15400,
+          "bbox": [
+            152,
+            266,
+            154,
+            100
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "rooms": [
+            0,
+            2
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            2,
+            4
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            0,
+            1
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            4,
+            5
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            1,
+            3
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            3,
+            5
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            2,
+            3
+          ],
+          "kind": "interior"
+        },
+        {
+          "rooms": [
+            4
+          ],
+          "kind": "entrance"
+        }
+      ],
+      "windows": [
+        {
+          "room": 0
+        },
+        {
+          "room": 1
+        },
+        {
+          "room": 3
+        },
+        {
+          "room": 5
+        }
+      ]
+    }
+  ]
+}

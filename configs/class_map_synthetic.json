@@ -1,0 +1,16 @@
+{
+  "name": "synthetic_test_classes",
+  "description": "Class map for the SYNTHETIC test fixtures only. The real Kaggle dataset needs its own class map once its masks are inspected.",
+  "mask_mode": "label_id",
+  "classes": [
+    {"id": 0,  "name": "background",  "kind": "background"},
+    {"id": 1,  "name": "wall",        "kind": "wall"},
+    {"id": 2,  "name": "door",        "kind": "door"},
+    {"id": 3,  "name": "window",      "kind": "window"},
+    {"id": 10, "name": "living room", "kind": "room"},
+    {"id": 11, "name": "bedroom",     "kind": "room"},
+    {"id": 12, "name": "kitchen",     "kind": "room"},
+    {"id": 13, "name": "bathroom",    "kind": "room"},
+    {"id": 14, "name": "hallway",     "kind": "room"}
+  ]
+}

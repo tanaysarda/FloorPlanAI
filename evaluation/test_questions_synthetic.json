@@ -1,0 +1,339 @@
+{
+  "dataset": "synthetic",
+  "note": "SYNTHETIC TEST DATA expectations derived from the generator ground truth, not from the database or the QA engine.",
+  "questions": [
+    {
+      "id": 1,
+      "category": "count",
+      "question": "How many rooms does plan 3 have?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 6
+      }
+    },
+    {
+      "id": 2,
+      "category": "count",
+      "question": "How many rooms are in floor plan 6?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 8
+      }
+    },
+    {
+      "id": 3,
+      "category": "count",
+      "question": "How many doors does plan 8 have?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 8
+      }
+    },
+    {
+      "id": 4,
+      "category": "count",
+      "question": "How many windows does plan 2 have?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 3
+      }
+    },
+    {
+      "id": 5,
+      "category": "count",
+      "question": "How many plans are there?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 8
+      }
+    },
+    {
+      "id": 6,
+      "category": "count",
+      "question": "How many bedrooms are in plan 6?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 3
+      }
+    },
+    {
+      "id": 7,
+      "category": "count",
+      "question": "How many bathrooms does plan 1 have?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 1
+      }
+    },
+    {
+      "id": 8,
+      "category": "largest_smallest",
+      "question": "What is the largest room in plan 7?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "row",
+        "values": {
+          "room_name": "living room #3",
+          "area_px": 17064
+        }
+      }
+    },
+    {
+      "id": 9,
+      "category": "largest_smallest",
+      "question": "What is the smallest room in plan 3?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "row",
+        "values": {
+          "room_name": "bedroom #5",
+          "area_px": 13125
+        }
+      }
+    },
+    {
+      "id": 10,
+      "category": "filtering",
+      "question": "Which plans have more than 3 doors?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "category": "filtering",
+      "question": "Which floor plans contain at least four windows?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          3,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "category": "filtering",
+      "question": "Which plans have fewer than 4 rooms?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "category": "windows",
+      "question": "Which room in plan 4 has no windows?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "room_name",
+        "values": [
+          "hallway #2"
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "category": "windows",
+      "question": "Which rooms have no windows?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "room_name",
+        "values": [
+          "bathroom #2",
+          "bathroom #4",
+          "bathroom #4",
+          "hallway #6",
+          "hallway #2",
+          "bathroom #4",
+          "bathroom #4",
+          "bathroom #8",
+          "hallway #6",
+          "bathroom #2",
+          "bathroom #5",
+          "hallway #3"
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "category": "windows",
+      "question": "Which rooms in plan 1 have no windows?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "room_name",
+        "values": [
+          "bathroom #2"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "category": "averages",
+      "question": "What is the average number of rooms across all plans?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 4.75
+      }
+    },
+    {
+      "id": 17,
+      "category": "averages",
+      "question": "What is the average number of doors per plan?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 5.13
+      }
+    },
+    {
+      "id": 18,
+      "category": "averages",
+      "question": "What is the average number of windows across all plans?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 3.25
+      }
+    },
+    {
+      "id": 19,
+      "category": "extremes",
+      "question": "Which plan has the most rooms?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          6
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "category": "extremes",
+      "question": "Which plan has the most doors?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "category": "empty_result",
+      "question": "Which plans have more than 20 doors?",
+      "expected_status": "no_results",
+      "expected": {
+        "type": "empty"
+      }
+    },
+    {
+      "id": 22,
+      "category": "invalid_plan",
+      "question": "How many rooms does plan 12 have?",
+      "expected_status": "invalid_plan",
+      "expected": {
+        "type": "status"
+      }
+    },
+    {
+      "id": 23,
+      "category": "invalid_plan",
+      "question": "What is the largest room in plan 99?",
+      "expected_status": "invalid_plan",
+      "expected": {
+        "type": "status"
+      }
+    },
+    {
+      "id": 24,
+      "category": "ambiguous",
+      "question": "How many doors are there?",
+      "expected_status": "clarification",
+      "expected": {
+        "type": "status"
+      }
+    },
+    {
+      "id": 25,
+      "category": "unsupported",
+      "question": "What is the area of the living room in plan 2 in square metres?",
+      "expected_status": "unsupported",
+      "expected": {
+        "type": "status"
+      }
+    },
+    {
+      "id": 26,
+      "category": "unsupported",
+      "question": "Where is the main entrance in plan 5?",
+      "expected_status": "unsupported",
+      "expected": {
+        "type": "status"
+      }
+    },
+    {
+      "id": 27,
+      "category": "unsupported",
+      "question": "What colour are the walls in plan 1?",
+      "expected_status": "unsupported",
+      "expected": {
+        "type": "status"
+      }
+    },
+    {
+      "id": 28,
+      "category": "unsupported",
+      "question": "How much furniture is in the living room of plan 3?",
+      "expected_status": "unsupported",
+      "expected": {
+        "type": "status"
+      }
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "dataset": "real",
+  "note": "Ground-truth evaluation questions derived from ingested asutoshprad/floor-plan-dataset plans in outputs/real/floorplans.db.",
+  "questions": [
+    {
+      "id": 1,
+      "category": "count",
+      "question": "How many plans are there?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 25
+      }
+    },
+    {
+      "id": 2,
+      "category": "count",
+      "question": "How many rooms does plan 1 have?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 12
+      }
+    },
+    {
+      "id": 3,
+      "category": "count",
+      "question": "How many rooms does plan 3 have?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 13
+      }
+    },
+    {
+      "id": 4,
+      "category": "count",
+      "question": "How many rooms does plan 12 have?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 12
+      }
+    },
+    {
+      "id": 5,
+      "category": "count",
+      "question": "How many doors does plan 1 have?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 13
+      }
+    },
+    {
+      "id": 6,
+      "category": "count",
+      "question": "How many windows does plan 4 have?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 1
+      }
+    },
+    {
+      "id": 7,
+      "category": "largest_smallest",
+      "question": "What is the largest room in plan 7?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "row",
+        "values": {
+          "room_name": "room #1",
+          "area_px": 1350
+        }
+      }
+    },
+    {
+      "id": 8,
+      "category": "largest_smallest",
+      "question": "What is the smallest room in plan 3?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "row",
+        "values": {
+          "room_name": "room #12",
+          "area_px": 3817
+        }
+      }
+    },
+    {
+      "id": 9,
+      "category": "filtering",
+      "question": "Which plans have more than 3 doors?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          1,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          24,
+          25
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "category": "filtering",
+      "question": "Which plans have fewer than 4 rooms?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          7,
+          8,
+          10,
+          15,
+          16,
+          19
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "category": "windows",
+      "question": "Which room in plan 4 has no windows?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "room_name",
+        "values": [
+          "room #1",
+          "room #2",
+          "room #3",
+          "room #6",
+          "room #7",
+          "room #8",
+          "room #9",
+          "room #10"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "category": "windows",
+      "question": "Which rooms in plan 1 have no windows?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "room_name",
+        "values": [
+          "room #1",
+          "room #2",
+          "room #3",
+          "room #4",
+          "room #5",
+          "room #7",
+          "room #9",
+          "room #11",
+          "room #12"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "category": "averages",
+      "question": "What is the average number of rooms across all plans?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 8.4
+      }
+    },
+    {
+      "id": 14,
+      "category": "averages",
+      "question": "What is the average number of doors per plan?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 7.0
+      }
+    },
+    {
+      "id": 15,
+      "category": "averages",
+      "question": "What is the average number of windows across all plans?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "scalar",
+        "column": "value",
+        "value": 1.24
+      }
+    },
+    {
+      "id": 16,
+      "category": "extremes",
+      "question": "Which plan has the most rooms?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          20
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "category": "extremes",
+      "question": "Which plan has the most doors?",
+      "expected_status": "answered",
+      "expected": {
+        "type": "set",
+        "column": "plan_id",
+        "values": [
+          1
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "category": "empty_result",
+      "question": "Which plans have more than 50 doors?",
+      "expected_status": "no_results",
+      "expected": {
+        "type": "empty"
+      }
+    },
+    {
+      "id": 19,
+      "category": "invalid_plan",
+      "question": "What is the largest room in plan 99?",
+      "expected_status": "invalid_plan",
+      "expected": {
+        "type": "status"
+      }
+    },
+    {
+      "id": 20,
+      "category": "ambiguous",
+      "question": "How many doors are there?",
+      "expected_status": "clarification",
+      "expected": {
+        "type": "status"
+      }
+    },
+    {
+      "id": 21,
+      "category": "unsupported",
+      "question": "What colour are the walls in plan 1?",
+      "expected_status": "unsupported",
+      "expected": {
+        "type": "status"
+      }
+    },
+    {
+      "id": 22,
+      "category": "unsupported",
+      "question": "What is the area of the largest room in plan 2 in square metres?",
+      "expected_status": "unsupported",
+      "expected": {
+        "type": "status"
+      }
+    }
+  ]
+}
